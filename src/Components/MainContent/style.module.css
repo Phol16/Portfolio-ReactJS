@@ -1,0 +1,64 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50vw;
+  height: 80vh;
+}
+.dynamicText{
+  height: 40px;
+  overflow: hidden;
+}
+.dynamicText li{
+  position: relative;
+  top: 0;
+  animation: slide 4.5s steps(3) infinite;
+}
+.dynamicText li span{
+  position: relative;
+}
+.dynamicText li span::after{
+  content: "";
+ position: absolute;
+ left: 0;
+ height: 70%;
+ width: 100%;
+ background-color: #262626;
+ border-left: 2px solid #0EA5E9;
+ animation: typing 1.5s steps(16) infinite;
+}
+@keyframes typing {
+  100%{
+    left: 100%;
+    margin: 0 30px;
+  }
+}
+@keyframes slide{
+  100%{
+    top: -120px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .container{
+    width: 100vw;
+  }
+  .textContainer{
+    display: flex;
+    flex-flow: column wrap;
+    width: fit-content;
+    font-size: 20px;
+  }
+  .dynamicText{
+    height: 30px;
+  }
+  .dynamicText li span::after{
+    height: 100%;
+  }
+  @keyframes slide{
+    100%{
+      top: -90px;
+    }
+  }
+}

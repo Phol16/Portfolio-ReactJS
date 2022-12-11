@@ -1,0 +1,28 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+const ProjectsComponent = ({ title, description, image, redirect }) => {
+  const navigate = useNavigate();
+
+  const intoThe = () => {
+    return location.replace(redirect);
+  };
+
+  return (
+    <div className="flex flex-col gap-3 my-5 lg:flex-row justify-between items-between">
+      <section className="flex flex-col items-center gap-5">
+        <button className="w-max bg-sky-700 w-44 h-10" onClick={intoThe}>
+          <p className="text-white">{title}</p>
+        </button>
+        <p className="lg:w-60 xl:w-80 ">{description}</p>
+      </section>
+      <section className="flex items-center justify-center gap-1">
+        <img src={image[0]} alt="Photo" className="bg-sky-700 w-28 h-16 sm:w-40 sm:h-28" />
+        <img src={image[1]} alt="Photo" className="bg-sky-700 w-28 h-16 sm:w-40 sm:h-28" />
+        <img src={image[2]} alt="Photo" className="bg-sky-700 w-28 h-16 sm:w-40 sm:h-28" />
+      </section>
+    </div>
+  );
+};
+
+export default ProjectsComponent;
