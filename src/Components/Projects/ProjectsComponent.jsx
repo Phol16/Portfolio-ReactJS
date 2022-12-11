@@ -5,7 +5,7 @@ const ProjectsComponent = ({ title, description, image, redirect }) => {
   const navigate = useNavigate();
 
   const intoThe = () => {
-    return location.replace(redirect);
+    return window.open(redirect,'_blank');
   };
 
   return (
