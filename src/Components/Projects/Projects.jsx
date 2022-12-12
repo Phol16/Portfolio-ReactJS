@@ -9,7 +9,7 @@ import movienotepad2 from '../../assets/movienotepad/movienotepad2.png';
 
 const Projects = () => {
   return (
-    <div className="p-1 flex justify-center items-center">
+    <div className="p-1 flex justify-center items-center py-10">
       <div className="flex flex-col ">
         <h1 className="text-sky-500 font-bold text-xl 2xl:text-2xl mb-10">Projects</h1>
         <section className="flex flex-col justify-center items-center self-center ">
