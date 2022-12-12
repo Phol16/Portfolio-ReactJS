@@ -1,4 +1,5 @@
 import React from 'react';
+import mongoDb from '../../../assets/mongodb.png'
 
 const SkillsIcons = () => {
   return (
@@ -37,6 +38,7 @@ const SkillsIcons = () => {
             fill="#5DD552"
           />
         </svg>
+        <img src={mongoDb} alt="Photo" className='w-12 h-15'/>
       </section>
     </div>
   );
