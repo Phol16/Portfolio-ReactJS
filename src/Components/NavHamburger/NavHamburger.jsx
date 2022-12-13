@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, Input } from '@chakra-ui/react';
+import { Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, Input } from '@chakra-ui/react';
 import NavButton from '../NavButton/NavButton';
 import Cv from '../../assets/PholibertLim_CV.pdf';
 import NavHamburgerFooter from './NavHamburgerFooter/NavHamburgerFooter';
@@ -15,7 +15,7 @@ const NavHamburger = () => {
           <path d="M2.04082 9.18367H55.102C56.2292 9.18367 57.1429 8.27003 57.1429 7.14286V2.04082C57.1429 0.913648 56.2292 0 55.102 0H2.04082C0.913648 0 0 0.913648 0 2.04082V7.14286C0 8.27003 0.913648 9.18367 2.04082 9.18367ZM2.04082 29.5918H55.102C56.2292 29.5918 57.1429 28.6782 57.1429 27.551V22.449C57.1429 21.3218 56.2292 20.4082 55.102 20.4082H2.04082C0.913648 20.4082 0 21.3218 0 22.449V27.551C0 28.6782 0.913648 29.5918 2.04082 29.5918ZM2.04082 50H55.102C56.2292 50 57.1429 49.0864 57.1429 47.9592V42.8571C57.1429 41.73 56.2292 40.8163 55.102 40.8163H2.04082C0.913648 40.8163 0 41.73 0 42.8571V47.9592C0 49.0864 0.913648 50 2.04082 50Z" fill="white" />
         </svg>
       </Button>
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose} finalFocusRef={btnRef}>
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose} finalFocusRef={'stay'}>
         <DrawerOverlay />
         <DrawerContent bg="#262626" className="flex justify-between items-center gap-5">
           <DrawerCloseButton color="white"/>
