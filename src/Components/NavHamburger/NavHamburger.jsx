@@ -40,6 +40,7 @@ const NavHamburger = () => {
                   </svg>
                 }
                 text={'About Me'}
+                redirect={'#AboutMe'}
               />
               <NavButton
                 icon={
@@ -48,6 +49,7 @@ const NavHamburger = () => {
                   </svg>
                 }
                 text={'Projects'}
+                redirect={'#Projects'}
               />
             </section>
             <NavHamburgerFooter />
