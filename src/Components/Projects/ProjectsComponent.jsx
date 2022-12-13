@@ -9,10 +9,10 @@ const ProjectsComponent = ({ title, description, image, redirect }) => {
   };
 
   return (
-    <div className="flex flex-col gap-3 my-5 lg:flex-row justify-between items-between">
-      <section className="flex flex-col items-center gap-5">
-        <button className="w-max bg-sky-700 w-44 h-10" onClick={intoThe}>
-          <p className="text-white">{title}</p>
+    <div className="flex flex-col gap-3 my-5 lg:flex-row justify-between items-between ">
+      <section className="flex flex-col items-center gap-5 ">
+        <button className="w-max bg-sky-700 w-44 h-10 text-white hover:bg-sky-900 hover:text-gray-500" onClick={intoThe}>
+          <p>{title}</p>
         </button>
         <p className="lg:w-60 xl:w-80 ">{description}</p>
       </section>
