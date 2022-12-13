@@ -35,6 +35,7 @@ const NavBar = () => {
               </svg>
             }
             text={'About Me'}
+            redirect={'#AboutMe'}
           />
           <NavButton
             icon={
@@ -43,6 +44,7 @@ const NavBar = () => {
               </svg>
             }
             text={'Projects'}
+            redirect={'#Projects'}
           />
         </section>
       </div>
