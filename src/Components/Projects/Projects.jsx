@@ -1,14 +1,17 @@
 import React from 'react';
 import ProjectsComponent from './ProjectsComponent';
-import pokedex0 from '../../assets/pokedex/pokedex-0.png';
-import pokedex1 from '../../assets/pokedex/pokedex-1.png';
-import pokedex2 from '../../assets/pokedex/pokedex-2.png';
-import movienotepad0 from '../../assets/movienotepad/movienotepad0.png';
-import movienotepad1 from '../../assets/movienotepad/movienotepad1.png';
-import movienotepad2 from '../../assets/movienotepad/movienotepad2.png';
-import mazegame0 from '../../assets/mazegame/mazegame0.png';
-import mazegame1 from '../../assets/mazegame/mazegame1.png';
-import mazegame2 from '../../assets/mazegame/mazegame2.png';
+import pokedex0 from '@/assets/pokedex/pokedex-0.png';
+import pokedex1 from '@/assets/pokedex/pokedex-1.png';
+import pokedex2 from '@/assets/pokedex/pokedex-2.png';
+import movienotepad0 from '@/assets/movienotepad/movienotepad0.png';
+import movienotepad1 from '@/assets/movienotepad/movienotepad1.png';
+import movienotepad2 from '@/assets/movienotepad/movienotepad2.png';
+import mazegame0 from '@/assets/mazegame/mazegame0.png';
+import mazegame1 from '@/assets/mazegame/mazegame1.png';
+import mazegame2 from '@/assets/mazegame/mazegame2.png';
+import weatherapp0 from '@/assets/weatherapp/weatherApp0.png'
+import weatherapp1 from '@/assets/weatherapp/weatherApp1.png'
+import weatherapp2 from '@/assets/weatherapp/weatherApp2.png'
 
 const Projects = () => {
   return (
@@ -20,7 +23,7 @@ const Projects = () => {
           <ProjectsComponent title={'TheMazeGame'} tools ={'HTML : CSS : JS '} redirect={'https://phol16.github.io/TheMazeGame/startingPage.html'} image={[mazegame0, mazegame1, mazegame2]} description={'A very simple maze game where you can select difficulty from easy to hard and the objective of the game is to make it to the finish line.'} />
           <ProjectsComponent title={'PokeDex'} tools ={'HTML : CSS : JS : ReactJS'} redirect={'https://reactjs-pokedex.onrender.com/'} image={[pokedex0, pokedex1, pokedex2]} description={'A very simple application where you can see all of the pokemons by their type and it also has a feature where you can capture them and be able to see all of the captured pokemon on your inventory at MyPokemon button.'} />
           <ProjectsComponent title={'Eatstagram'} tools ={'HTML : CSS : JS : ReactJS : ExpressJS : MongoDb : Cloudinary : Auth0 '} redirect={'#'} image={[]} description={'-Eatstagram Description-'} />
-          <ProjectsComponent title={'WeatherApp'} tools ={'HTML : CSS : JS : ReactJS'} redirect={'#'} image={[]} description={'-WeatherApp description-'} />
+          <ProjectsComponent title={'WeatherApp'} tools ={'HTML : CSS : JS : ReactJS'} redirect={'https://weather-app-7009.onrender.com/'} image={[weatherapp0, weatherapp1, weatherapp2]} description={'A simple application where it tells you the air tempreature, air pressure, cloud area fraction, relative humidity, wind from direction and wind speed of zamboanga city '} />
         </section>
       </div>
     </div>
