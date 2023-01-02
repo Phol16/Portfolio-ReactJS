@@ -19,7 +19,7 @@ const NavHamburger = () => {
         <DrawerOverlay />
         <DrawerContent bg="#262626" className="flex justify-between items-center gap-5">
           <DrawerCloseButton color="white"/>
-            <h1 className="text-white p-3">Nav Menu</h1>
+            <h1 className="text-white p-3">Phol</h1>
             <section className="flex flex-col gap-5 items-center">
               <NavButton
                 icon={
