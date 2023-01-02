@@ -8,7 +8,7 @@ const AboutMe = () => {
       <section className="bg-neutral-800 sm:w-4/5 flex flex-col justify-evenly items-center gap-16 py-20 px-2">
         <div className={`${style.topContainer} xl:3/12 lg:w-6/12 sm:w-9/12 leading-8 `}>
           <h1 className="text-sky-500 font-bold mb-3 text-xl 2xl:text-2xl" >About Me</h1>
-          <p className='sm:text-sm 2xl:text-base indent-5'> My name is Pholibert U. Lim Jr. I spend time learning new things specifically in coding because I'm passionate about learning things or tools that are necessary to improve my knowledge in the tech world. currently I’m knowledgable in using MERN stack. below are more details about me.</p>
+          <p className='sm:text-sm 2xl:text-base indent-5'> My name is Pholibert U. Lim Jr. I spend time learning new things specifically in coding because I'm passionate about learning things or tools that are necessary to improve my knowledge in the tech world. currently I’m knowledgeable in using MERN stack. below are more details about me.</p>
         </div>
         <div className={`${style.bottomContainer} flex sm:flex-row sm:w-9/12 sm:justify-between lg:justify-around gap-5`}>
           <section className='mr-1'>
