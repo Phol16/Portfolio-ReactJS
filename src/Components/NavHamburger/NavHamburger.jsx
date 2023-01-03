@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import { Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, Input } from '@chakra-ui/react';
-import NavButton from '../NavButton/NavButton';
-import Cv from '../../assets/PholibertLim_CV.pdf';
-import NavHamburgerFooter from './NavHamburgerFooter/NavHamburgerFooter';
+import NavButton from '@/components/NavButton/NavButton';
+import Cv from '@/assets/PholibertLim_CV.pdf';
+import NavHamburgerFooter from '@/components/NavHamburger/NavHamburgerFooter/NavHamburgerFooter';
 
 const NavHamburger = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
