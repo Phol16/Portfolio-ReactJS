@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillsIcons from '@/components/AboutMe/SkillsIcon/SkillsIcons.jsx';
+import SkillsIcons from './SkillsIcon/SkillsIcons.jsx';
 import style from './style.module.css'
 
 const AboutMe = () => {
