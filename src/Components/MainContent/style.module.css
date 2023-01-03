@@ -1,5 +1,6 @@
 .container{
   display: flex;
+  font-family: Poppins,Roboto;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
