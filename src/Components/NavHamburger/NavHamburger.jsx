@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, Input } from '@chakra-ui/react';
 import NavButton from '@/components/NavButton/NavButton.jsx';
 import Cv from '@/assets/PholibertLim_CV.pdf';
-import NavHamburgerFooter from '@/components/NavHamburger/NavHamburgerFooter/NavHamburgerFooter';
+import NavHamburgerFooter from '@/components/NavHamburger/NavHamburgerFooter/NavHamburgerFooter.jsx';
 
 const NavHamburger = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
