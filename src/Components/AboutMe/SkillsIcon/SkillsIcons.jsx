@@ -1,5 +1,5 @@
 import React from 'react';
-import mongoDb from '../../../assets/mongodb.png'
+import mongoDb from '@/assets/mongodb.png'
 
 const SkillsIcons = () => {
   return (
