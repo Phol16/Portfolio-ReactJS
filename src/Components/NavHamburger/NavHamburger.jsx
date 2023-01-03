@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, useDisclosure, Button, Input } from '@chakra-ui/react';
-import NavButton from '@/components/NavButton/NavButton.jsx';
+import NavButton from '../NavButton/NavButton.jsx';
 import Cv from '@/assets/PholibertLim_CV.pdf';
 import NavHamburgerFooter from './NavHamburgerFooter/NavHamburgerFooter.jsx';
 

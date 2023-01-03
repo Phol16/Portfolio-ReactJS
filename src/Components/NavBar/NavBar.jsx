@@ -1,6 +1,6 @@
 import React from 'react';
-import NavButton from '@/components/NavButton/NavButton.jsx';
-import NavHamburger from '@/components/NavHamburger/NavHamburger.jsx';
+import NavButton from '../NavButton/NavButton.jsx';
+import NavHamburger from '../NavHamburger/NavHamburger.jsx';
 import Cv from '@/assets/PholibertLim_CV.pdf'
 import style from './style.module.css';
 
