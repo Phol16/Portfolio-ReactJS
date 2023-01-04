@@ -1,13 +1,19 @@
 import React from 'react';
 import style from './style.module.css';
 import Me from '@/assets/me-nobg.png';
+import { motion } from 'framer-motion';
 
 const MainContent = () => {
   return (
     <section className='flex flex-col justify-center items-center mb-1'>
-      <div className={`${style.container} sm:flex-col 2xl:flex-row`}>
-        <img src={Me} alt='Me' className='h-2/6 m-16 hidden sm:block' />
-        <div className={`lg:text-4xl leading-normal self-center tracking-wide ${style.textContainer}`}>
+      <motion.div 
+      className={`${style.container} sm:flex-col 2xl:flex-row`}>
+        <img src={Me} alt='Me' className='max-h-52 m-16 hidden sm:block ' />
+        <motion.div 
+              initial={{opacity: 0 }}
+              animate={{opacity: 1 }}
+              transition={{delay: 0.1, duration: 2}}
+        className={`lg:text-4xl leading-normal self-center tracking-wide ${style.textContainer}`}>
           <p>Hi! My name is Phol</p>
           <span className='flex'>
             I am a
@@ -26,8 +32,8 @@ const MainContent = () => {
               </li>
             </ul>
           </span>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <a href='#AboutMe'>
         <button className='bg-neutral-800 border-none focus:outline-none'>
           <svg width='20' height='30' viewBox='0 0 41 50' fill='none' xmlns='http://www.w3.org/2000/svg'>

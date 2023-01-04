@@ -9,7 +9,7 @@ const ProjectsComponent = ({ title, description, image, redirect, tools }) => {
   return (
     <div className='flex flex-col gap-3 my-5 justify-between items-between border border-sky-700 rounded-lg p-5 bg-zinc-900'>
       <section className='flex flex-col items-center gap-5 '>
-        <motion.button whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} transition={{ type: 'spring', stiffness: 400, damping: 17 }} className='w-max bg-sky-700 w-44 h-10 text-white hover:bg-sky-900 hover:text-gray-500' onClick={intoThe}>
+        <motion.button whileHover={{ scale: 1.2, textShadow: '0px 0px 4px #ffffff' }} whileTap={{ scale: 0.9 }} transition={{ type: 'spring', stiffness: 400, damping: 17 }} className='w-max bg-sky-700 w-44 h-10 text-white hover:bg-sky-900 ' onClick={intoThe}>
           <p>{title}</p>
         </motion.button>
         <p className='max-w-md text-sky-400 text-center'>{tools}</p>
