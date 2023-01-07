@@ -31,7 +31,7 @@ const Footer = () => {
           </svg>
         </motion.button>
       </section>
-      <p>© Phol 2022</p>
+      <p className='absolute w-2/4 flex justify-end '>© Phol 2022</p>
       <section>
         <p>
           Location: <span className='text-sky-500'>Zamboanga City</span>
