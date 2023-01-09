@@ -68,7 +68,7 @@ const SkillsIcons = () => {
         <p className='text-xs'>ExpressJS</p>
         </section>
         <section className='flex flex-col justify-center items-center gap-1'>
-        <img src={mongoDb} alt='Photo' className='w-10 h-13' />
+        <img src={mongoDb} alt='Photo' className='w-10 h-10' />
         <p className='text-xs'>MongoDB</p>
         </section>
       </section>
