@@ -11,27 +11,16 @@ const AboutMe = () => {
           <p className='sm:text-sm 2xl:text-base indent-5'> My name is Pholibert U. Lim Jr. I spend time learning new things specifically in coding because I'm passionate about learning things or tools that are necessary to improve my knowledge in the tech world. currently I’m knowledgeable in using MERN stack. below are more details about me.</p>
         </div>
         <div className={`${style.bottomContainer} flex md:flex-row sm:w-9/12 sm:justify-between lg:justify-around gap-5`}>
-          <section className='mr-1'>
+          <section className='mr-1 max-w-sm'>
             <h1 className="text-sky-500 font-bold mb-3 sm:text-base 2xl:text-xl">Education</h1>
             <li className='sm:text-sm 2xl:text-base m-1'>Tertiary</li>
             <p className='mb-5 sm:text-xs 2xl:text-base'>
               Ateneo de Zamboanga University <br />
               LaPurisima St., Zamboanga City <br /> Bachelor of Science in Computer Engineering <br /> (June 2015 - March 2021)
             </p>
-            <li className='sm:text-sm 2xl:text-base m-1'>Secondary</li>
-            <p className='mb-5 sm:text-xs 2xl:text-base'>
-              Pilar College of Zamboanga City, Inc <br />
-              RT. Lim Boulevard, Zamboanga City
-              <br />
-              (June 2011 - March 2015)
-            </p>
-            <li className='sm:text-sm 2xl:text-base m-1'>Elementary</li>
-            <p className='sm:text-xs 2xl:text-base '>
-              Pilar College of Zamboanga City, Inc <br />
-              RT. Lim Boulevard, Zamboanga City
-              <br />
-              (June 2004 - March 2011)
-            </p>
+            <h1 className="text-sky-500 font-bold mb-3 sm:text-base 2xl:text-xl">Random Facts About Me</h1>
+            <li className='sm:text-sm 2xl:text-base m-1'>I lived in the southern philippines, Zamboanga city to be exact.</li>
+            <li className='sm:text-sm 2xl:text-base m-1'>Favorite colors are black and white or any dark colors</li>
           </section>
           <section className='flex flex-col justify-around gap-5'>
             <div>

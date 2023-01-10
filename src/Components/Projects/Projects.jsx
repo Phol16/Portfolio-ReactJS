@@ -15,6 +15,9 @@ import weatherapp2 from '@/assets/weatherapp/weatherApp2.png';
 import eatstagram0 from '@/assets/eatstagram/eatstagram0.png';
 import eatstagram1 from '@/assets/eatstagram/eatstagram1.png';
 import eatstagram2 from '@/assets/eatstagram/eatstagram2.png';
+import portfolio0 from '@/assets/portfolio/portfolio0.png';
+import portfolio1 from '@/assets/portfolio/portfolio1.png';
+import portfolio2 from '@/assets/portfolio/portfolio2.png';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation } from 'framer-motion';
@@ -52,6 +55,7 @@ const Projects = () => {
         <motion.section animate={animation} className='flex flex-col justify-center items-center self-center '>
           <ProjectsComponent title={'MovieNotepad'} source={'https://github.com/Phol16/MovieNotepad_clientside'} tools={'HTML : CSS : JS : ReactJS : ExpressJS : MongoDB : MUI'} redirect={'https://movienotepad-clientside.onrender.com/'} image={[movienotepad0, movienotepad1, movienotepad2]} description={'A simple application where you can view all the movies/series and can add it to your watchlist, once added you can view all your listed movies and can add notes to it.'} />
           <ProjectsComponent title={'WeatherApp'} source={'https://github.com/Phol16/Weather-App'} tools={'HTML : CSS : JS : ReactJS'} redirect={'https://weather-app-7009.onrender.com/'} image={[weatherapp0, weatherapp1, weatherapp2]} description={'A simple application where it tells you the air tempreature, air pressure, cloud area fraction, relative humidity, wind from direction and wind speed of zamboanga city '} />
+          <ProjectsComponent title={'Protfolio'} source={'https://github.com/Phol16/Portfolio-ReactJS'} tools={'HTML : CSS : JS : ReactJS : TailwindCss : FramerMotion : react-intersection-observer '} redirect={'https://portfolio-phol.onrender.com/'} image={[portfolio0, portfolio1, portfolio2]} description={'The current site you are in is this projects, it is just a simple portfolio which contains informations about me and the projects'} />
           <ProjectsComponent title={'PokeDex'} source={'https://github.com/Phol16/ReactJS-reducer-pokedex'} tools={'HTML : CSS : JS : ReactJS : MUI'} redirect={'https://reactjs-pokedex.onrender.com/'} image={[pokedex0, pokedex1, pokedex2]} description={'A very simple application where you can see all of the pokemons by their type and it also has a feature where you can capture them and be able to see all of the captured pokemon on your inventory at MyPokemon button.'} />
           <ProjectsComponent title={'Eatstagram'} source={'https://github.com/Phol16'} tools={'HTML : CSS : JS : ReactJS : ExpressJS : MongoDb : Cloudinary : Auth0 '} redirect={'https://proj6-fe.onrender.com/'} image={[eatstagram0, eatstagram1, eatstagram2]} description={`Eatstagram is a mobile view application where you can login into your account and post or upload/publish photos of your favorite foods you can also view other user's posts and can interact on the posts of other user profile, you can also follow other user profile.`} />
           <ProjectsComponent title={'TheMazeGame'} source={'https://github.com/Phol16/TheMazeGame'} tools={'HTML : CSS : JS '} redirect={'https://phol16.github.io/TheMazeGame/startingPage.html'} image={[mazegame0, mazegame1, mazegame2]} description={'A very simple maze game where you can select difficulty from easy to hard and the objective of the game is to make it to the finish line.'} />
