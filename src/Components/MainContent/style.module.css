@@ -69,7 +69,7 @@
 }
 
 /* mozilla */
-@-moz-document url-prefix(){
+@supports(-moz-appearance: none){
   .container{
     display: flex;
     font-family: Poppins,Roboto;
@@ -80,6 +80,7 @@
     height: 80vh;
   }
   .textContainer{
+    color: gray;
     font-size: 25px;
   }
   .dynamicText{
