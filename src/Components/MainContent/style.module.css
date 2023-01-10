@@ -4,11 +4,15 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 50vw;
+  width: 55vw;
   height: 80vh;
 }
+.textContainer{
+  font-size: 36px;
+  line-height: 40px;
+}
 .dynamicText{
-  height: 40px;
+  height: 45px;
   overflow: hidden;
 }
 .dynamicText li{
@@ -23,7 +27,7 @@
   content: "";
  position: absolute;
  left: 0;
- height: 70%;
+ height: 100%;
  width: 100%;
  background-color: #262626;
  border-left: 2px solid #0EA5E9;
@@ -37,7 +41,7 @@
 }
 @keyframes slide{
   100%{
-    top: -155px;
+    top: -215px;
   }
 }
 
@@ -60,6 +64,78 @@
   @keyframes slide{
     100%{
       top: -120px;
+    }
+  }
+}
+
+/* mozilla */
+@-moz-document url-prefix(){
+  .container{
+    display: flex;
+    font-family: Poppins,Roboto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50vw;
+    height: 80vh;
+  }
+  .textContainer{
+    font-size: 25px;
+  }
+  .dynamicText{
+    height: 32px;
+    overflow: hidden;
+  }
+  .dynamicText li{
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+  }
+  .dynamicText li span{
+    position: relative;
+  }
+  .dynamicText li span::after{
+    content: "";
+   position: absolute;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: #262626;
+   border-left: 2px solid #0EA5E9;
+   animation: typing 1.5s steps(16) infinite;
+  }
+  @keyframes typing {
+    100%{
+      left: 100%;
+      margin: 0 30px;
+    }
+  }
+  @keyframes slide{
+    100%{
+      top: -148px;
+    }
+  }
+  
+  @media screen and (max-width: 1023px){
+    .container{
+      width: 100vw;
+    }
+    .textContainer{
+      display: flex;
+      flex-flow: column wrap;
+      width: fit-content;
+      font-size: 25px;
+    }
+    .dynamicText{
+      height: 32px;
+    }
+    .dynamicText li span::after{
+      height: 100%;
+    }
+    @keyframes slide{
+      100%{
+        top: -148px;
+      }
     }
   }
 }

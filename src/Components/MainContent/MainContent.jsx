@@ -13,7 +13,7 @@ const MainContent = () => {
               initial={{opacity: 0 }}
               animate={{opacity: 1 }}
               transition={{delay: 0.1, duration: 2}}
-        className={`lg:text-4xl leading-normal self-center tracking-wide ${style.textContainer}`}>
+        className={` leading-normal self-center tracking-wide ${style.textContainer}`}>
           <p>Hi! My name is Phol</p>
           <span className='flex'>
             I am a
