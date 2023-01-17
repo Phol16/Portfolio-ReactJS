@@ -45,11 +45,9 @@ const Projects = () => {
         },
       });
     }
-
-    console.log('inView:', inView);
   }, [inView]);
   return (
-    <div ref={ref} className='p-1 flex justify-center items-center py-10' id='Projects'>
+    <div ref={ref} className='p-1 flex justify-center items-center py-5' id='Projects'>
       <div className='flex flex-col '>
         <h1 className='text-sky-500 font-bold text-xl 2xl:text-2xl mb-10'>Projects</h1>
         <motion.section animate={animation} className='flex flex-col justify-center items-center self-center '>
