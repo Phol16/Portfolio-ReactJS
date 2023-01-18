@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const ProjectsComponent = ({ title, description, image, redirect, tools, source }) => {
   const homepage = () => {
@@ -34,12 +36,14 @@ const ProjectsComponent = ({ title, description, image, redirect, tools, source 
           </motion.button>
         </div>
         <p className='max-w-md text-sky-400 text-center font-medium'>{tools}</p>
-        <p className='max-w-md  '>{description}</p>
+        <p className='max-w-md '>{description}</p>
       </section>
-      <section className='flex items-center justify-center gap-1'>
-        <img src={image[0]} alt='Photo' className='bg-sky-700 w-28 h-16 sm:w-40 sm:h-28 rounded-md' />
-        <img src={image[1]} alt='Photo' className='bg-sky-700 w-28 h-16 sm:w-40 sm:h-28 rounded-md' />
-        <img src={image[2]} alt='Photo' className='bg-sky-700 w-28 h-16 sm:w-40 sm:h-28 rounded-md' />
+      <section className='flex items-center justify-center gap-1 max-w-md '>
+        <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
+        <img src={image[0]} alt='Photo' className='bg-sky-700 w-28 max-w-md max-h-60 rounded-md' />
+        <img src={image[1]} alt='Photo' className='bg-sky-700 w-28 max-w-md max-h-60 rounded-md' />
+        <img src={image[2]} alt='Photo' className='bg-sky-700 w-28 max-w-md max-h-60 rounded-md' />
+        </Carousel>
       </section>
     </div>
   );
