@@ -12,7 +12,7 @@ const ProjectsComponent = ({ title, description, image, redirect, tools, source 
   };
 
   return (
-    <div className='flex flex-col gap-3 my-5 justify-between items-between border border-sky-700 rounded-lg p-5 bg-zinc-900'>
+    <div className='flex flex-col gap-3 justify-between items-between border border-sky-700 rounded-lg p-5 bg-zinc-900'>
       <section className='flex flex-col items-center gap-5 '>
         <p className='font-semibold text-lg'>{title}</p>
         <div className='flex gap-4'>
