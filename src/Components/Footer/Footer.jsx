@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <div className='flex items-center justify-between text-xs py-2 px-5 border-t-2 hidden lg:flex z-10'>
+    <div className='flex items-center justify-between text-xs py-2 px-5 border-t-2 hidden lg:flex z-10 border-sky-700'>
       <section className='z-20'>
         <motion.button
         whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.9 }} transition={{ type: 'spring', stiffness: 400, damping: 17 }}
