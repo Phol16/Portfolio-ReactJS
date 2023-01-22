@@ -7,17 +7,17 @@ const MainContent = () => {
   return (
     <section className='flex flex-col justify-center items-center mb-1'>
       <motion.div 
-      className={`${style.container} sm:flex-col 2xl:flex-row`}>
-        <img src={Me} alt='Me' className='max-h-52 m-16 hidden sm:block ' />
+      className={`${style.container} sm:flex-col`}>
+        <img src={Me} alt='Me' className='max-h-36 lg:max-h-52 m-10 hidden sm:block'/>
         <motion.div 
               initial={{opacity: 0 }}
               animate={{opacity: 1 }}
               transition={{delay: 0.1, duration: 2}}
-        className={` leading-normal self-center tracking-wide ${style.textContainer}`}>
-          <p>Hi! My name is Phol</p>
-          <span className='flex'>
+        className={` leading-normal ${style.textContainer}`}>
+          <p className='self-center'>Hi! My name is Phol</p>
+          <span className='flex items-center justify-center'>
             I am a
-            <ul className={`text-sky-500 ml-4 font-extrabold ${style.dynamicText}`}>
+            <ul className={`text-sky-500 ml-2 font-extrabold ${style.dynamicText}`}>
               <li>
                 <span>PROGRAMMER</span>
               </li>
