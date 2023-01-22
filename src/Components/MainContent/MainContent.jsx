@@ -15,7 +15,7 @@ const MainContent = () => {
               transition={{delay: 0.1, duration: 2}}
         className={` leading-normal ${style.textContainer}`}>
           <p className='self-center'>Hi! My name is Phol</p>
-          <span className='flex items-center justify-center'>
+          <span className='flex'>
             I am a
             <ul className={`text-sky-500 ml-2 font-extrabold ${style.dynamicText}`}>
               <li>
