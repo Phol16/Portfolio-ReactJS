@@ -33,14 +33,14 @@ const Footer = () => {
       </section>
       <p className='absolute w-2/4 flex justify-end z-0'>© Phol 2022</p>
       <section>
-        <p>
-          Location: <span className='text-sky-500'>Zamboanga City</span>
+        <p className='text-sky-500'>
+          Location: <span className='text-white'>Zamboanga City</span>
         </p>
-        <p>
-          Contact Number: <span className='text-sky-500'>09060447603</span>
+        <p className='text-sky-500'>
+          Contact Number: <span className='text-white'>09060447603</span>
         </p>
-        <p>
-          Email: <span className='text-sky-500'>Pholibertlim@gmail.com</span>
+        <p className='text-sky-500'>
+          Email: <span className='text-white'>Pholibertlim@gmail.com</span>
         </p>
       </section>
     </div>

@@ -4,9 +4,9 @@ const NavHamburgerFooter = () => {
   return (
     <div className='text-white text-xs mb-5 flex gap-10 items-center'>
       <section className='flex flex-col gap-1'>
-        <p>Location: <span className='text-sky-500'>Zamboanga City</span></p>
-        <p>Contact Number: <span className='text-sky-500'>09060447603</span></p>
-        <p>Email: <span className='text-sky-500'>Pholibertlim@gmail.com</span></p>
+        <p className='text-sky-500'>Location: <span className='text-white'>Zamboanga City</span></p>
+        <p className='text-sky-500'>Contact Number: <span className='text-white'>09060447603</span></p>
+        <p className='text-sky-500'>Email: <span className='text-white'>Pholibertlim@gmail.com</span></p>
       </section>
       <section className='flex gap-2'>
         <button
