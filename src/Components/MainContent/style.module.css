@@ -20,7 +20,7 @@
 .dynamicText li {
   position: relative;
   top: 0;
-  animation: slide 6s steps(4) infinite;
+  animation: slide 8s steps(4) infinite;
 }
 .dynamicText li span {
   position: relative;
@@ -28,17 +28,30 @@
 .dynamicText li span::after {
   content: '';
   position: absolute;
-  left: 0;
+  left: 0px;
   height: 100%;
   width: 100%;
   background-color: #262626;
-  border-left: 2px solid #0ea5e9;
-  animation: typing 1.5s steps(16) infinite;
+  border-left: 2px solid #ffffff;
+  animation: typing 2s steps(16) infinite;
+}
+.below{
+  animation:bounce 1.5s infinite
+}
+@keyframes bounce{
+  50%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 @keyframes typing {
+  40%, 60%{
+    left: 100%
+  }
   100% {
-    left: 100%;
-    margin: 0 30px;
+    left: 0%;
   }
 }
 @keyframes slide {
@@ -91,7 +104,7 @@
   .dynamicText li {
     position: relative;
     top: 0;
-    animation: slide 6s steps(4) infinite;
+    animation: slide 8s steps(4) infinite;
   }
   .dynamicText li span {
     position: relative;
@@ -103,13 +116,15 @@
     height: 100%;
     width: 100%;
     background-color: #262626;
-    border-left: 2px solid #0ea5e9;
-    animation: typing 1.5s steps(16) infinite;
+    border-left: 2px solid #ffffff;
+    animation: typing 2s steps(16) infinite;
   }
   @keyframes typing {
+    40%, 60%{
+      left: 100%
+    }
     100% {
-      left: 100%;
-      margin: 0 30px;
+      left: 0%;
     }
   }
   @keyframes slide {
