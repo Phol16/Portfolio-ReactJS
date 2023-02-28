@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
 const ProjectsComponent = ({ title, description, image, redirect, tools, source }) => {
@@ -15,7 +15,7 @@ const ProjectsComponent = ({ title, description, image, redirect, tools, source 
     <div className='flex flex-col gap-3 justify-between items-between border border-sky-700 rounded-lg p-5 bg-zinc-900'>
       <section className='flex flex-col items-center gap-5 '>
         <p className='font-semibold text-lg'>{title}</p>
-        <div className='flex gap-4'>
+        <div className='grid grid-cols-2 gap-2'>
           <motion.button whileHover={{ scale: 1.2, textShadow: '0px 0px 4px #ffffff' }} whileTap={{ scale: 0.9 }} transition={{ type: 'spring', stiffness: 400, damping: 17 }} className=' bg-gradient-to-br from-sky-500 to-sky-900 w-28 h-9 text-white hover:bg-gradient-to-tl text-xs flex items-center justify-center gap-1 border-none' onClick={homepage}>
             <svg width='18' height='18' viewBox='0 0 22 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path
@@ -23,7 +23,7 @@ const ProjectsComponent = ({ title, description, image, redirect, tools, source 
                 fill='white'
               />
             </svg>
-            <p>Live Demo</p>
+            {title === 'MovieNotepad' ? <p>Live Demo V1</p> : <p>Live Demo</p>}
           </motion.button>
           <motion.button whileHover={{ scale: 1.2, textShadow: '0px 0px 4px #ffffff' }} whileTap={{ scale: 0.9 }} transition={{ type: 'spring', stiffness: 400, damping: 17 }} className='bg-gradient-to-tl from-sky-500 to-sky-900 w-28 h-9 text-white hover:bg-gradient-to-br text-xs flex items-center justify-center gap-1 border-none' onClick={github}>
             <svg width='22' height='20' viewBox='0 0 52 50' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -34,15 +34,26 @@ const ProjectsComponent = ({ title, description, image, redirect, tools, source 
             </svg>
             <p>Source Code</p>
           </motion.button>
+          {title === 'MovieNotepad' ? (
+            <motion.button whileHover={{ scale: 1.2, textShadow: '0px 0px 4px #ffffff' }} whileTap={{ scale: 0.9 }} transition={{ type: 'spring', stiffness: 400, damping: 17 }} className=' bg-gradient-to-br from-sky-500 to-sky-900 w-28 h-9 text-white hover:bg-gradient-to-tl text-xs flex items-center justify-center gap-1 border-none' onClick={()=>{window.open('https://movienotepadclient.onrender.com','_blank')}}>
+              <svg width='18' height='18' viewBox='0 0 22 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path
+                  d='M10.7083 4.43823L3.66696 10.2376V16.4968C3.66696 16.6589 3.73134 16.8143 3.84593 16.9289C3.96053 17.0435 4.11596 17.1079 4.27802 17.1079L8.55776 17.0968C8.71929 17.096 8.87394 17.0313 8.98787 16.9168C9.10181 16.8022 9.16577 16.6473 9.16577 16.4857V12.8304C9.16577 12.6684 9.23015 12.5129 9.34475 12.3983C9.45934 12.2838 9.61477 12.2194 9.77683 12.2194H12.2211C12.3832 12.2194 12.5386 12.2838 12.6532 12.3983C12.7678 12.5129 12.8322 12.6684 12.8322 12.8304V16.4831C12.8319 16.5635 12.8475 16.6431 12.8781 16.7175C12.9087 16.7919 12.9537 16.8594 13.0105 16.9164C13.0672 16.9733 13.1347 17.0185 13.2089 17.0493C13.2832 17.0802 13.3628 17.096 13.4432 17.096L17.7214 17.1079C17.8835 17.1079 18.0389 17.0435 18.1535 16.9289C18.2681 16.8143 18.3325 16.6589 18.3325 16.4968V10.2334L11.2927 4.43823C11.2099 4.37152 11.1068 4.33514 11.0005 4.33514C10.8942 4.33514 10.7911 4.37152 10.7083 4.43823V4.43823ZM21.8308 8.37998L18.638 5.7482V0.458298C18.638 0.33675 18.5897 0.22018 18.5038 0.134232C18.4178 0.0482849 18.3013 0 18.1797 0H16.041C15.9195 0 15.8029 0.0482849 15.7169 0.134232C15.631 0.22018 15.5827 0.33675 15.5827 0.458298V3.23138L12.1634 0.418197C11.8353 0.148175 11.4235 0.000539778 10.9986 0.000539778C10.5736 0.000539778 10.1619 0.148175 9.83374 0.418197L0.166323 8.37998C0.119916 8.41834 0.0815212 8.46546 0.0533329 8.51866C0.0251445 8.57186 0.00771497 8.6301 0.00204025 8.69004C-0.00363448 8.74998 0.00255679 8.81045 0.0202603 8.86799C0.0379638 8.92554 0.0668326 8.97903 0.105217 9.02542L1.0791 10.2094C1.11738 10.2559 1.16446 10.2944 1.21766 10.3228C1.27085 10.3511 1.32911 10.3686 1.3891 10.3744C1.44909 10.3802 1.50962 10.3741 1.56725 10.3565C1.62487 10.3388 1.67845 10.31 1.72492 10.2716L10.7083 2.87238C10.7911 2.80567 10.8942 2.76929 11.0005 2.76929C11.1068 2.76929 11.2099 2.80567 11.2927 2.87238L20.2764 10.2716C20.3228 10.31 20.3763 10.3389 20.4339 10.3566C20.4914 10.3743 20.5519 10.3805 20.6118 10.3748C20.6718 10.3691 20.73 10.3517 20.7832 10.3235C20.8364 10.2953 20.8835 10.2569 20.9219 10.2105L21.8958 9.02656C21.9341 8.97991 21.9629 8.92614 21.9803 8.86834C21.9978 8.81054 22.0037 8.74986 21.9977 8.68977C21.9917 8.62969 21.9738 8.57139 21.9452 8.51822C21.9165 8.46506 21.8777 8.41808 21.8308 8.37998V8.37998Z'
+                  fill='white'
+                />
+              </svg>
+              <p>Live Demo V2</p>
+            </motion.button>
+          ) : null}
         </div>
         <p className='max-w-md text-sky-400 text-center font-medium'>{tools}</p>
         <p className='max-w-md '>{description}</p>
       </section>
       <section className='flex items-center justify-center gap-1 max-w-md '>
         <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
-        <img src={image[0]} alt='Photo' className='bg-sky-700 w-28 max-w-md max-h-60 rounded-md' />
-        <img src={image[1]} alt='Photo' className='bg-sky-700 w-28 max-w-md max-h-60 rounded-md' />
-        <img src={image[2]} alt='Photo' className='bg-sky-700 w-28 max-w-md max-h-60 rounded-md' />
+          <img src={image[0]} alt='Photo' className='bg-sky-700 w-28 max-w-md max-h-60 rounded-md' />
+          <img src={image[1]} alt='Photo' className='bg-sky-700 w-28 max-w-md max-h-60 rounded-md' />
+          <img src={image[2]} alt='Photo' className='bg-sky-700 w-28 max-w-md max-h-60 rounded-md' />
         </Carousel>
       </section>
     </div>
